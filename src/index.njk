@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-delivery">
+                <div class="inner-wrap">
+                    <div class="block-delivery__content">
+                        <div class="title-inner-wrap">
+                            <div class="title-wrap">
+                                <h2 class="h2-title title-decor-tile">Способы оплаты</h2>
+                            </div>
+                            <div class="text-wrap">
+                                <p>
+                                    Доступны варианты оплаты для юридических и физических лиц. Подходящий способ
+                                    фиксируется при оформлении заказа.
+                                </p>
+                            </div>
+                        </div>
+                        <div data-spollers="992,max" class="spollers">
+                            <div class="spollers__item">
+                                <button type="button" data-spoller class="spollers__button">
+                                    <span class="spollers__name">Безналичный расчёт</span>
+                                    <span class="spollers__arrow">
+                                        <img loading="lazy" src="images/plus.svg" alt="" class="spollers-plus">
+                                        <img loading="lazy" src="images/minus.svg" alt="" class="spollers-minus">
+                                    </span>
+                                </button>
+                                <div class="spollers__body">
+                                    <div class="spollers__items">
+                                        <div class="spollers__top">
+                                            <div class="spollers__badge badge-black">Для юридических лиц</div>
+                                            <div class="spollers__title">
+                                                Безналичный расчёт
+                                            </div>
+                                            <img loading="lazy" src="images/delivery1.webp" alt=""
+                                                class="spollers__pic1">
+                                        </div>
+                                        <div class="spollers__bottom">
+                                            <div class="spollers__text">
+                                                <p>
+                                                    Выставляем счёт на оплату <strong>с НДС 22%</strong>. Предоставляем
+                                                    полный
+                                                    пакет
+                                                    закрывающих документов: договор, счёт и УПД.
+                                                </p>
+                                            </div>
+                                            <div class="spollers__text2">
+                                                <p>
+                                                    Документы отправляются вместе с грузом. Если груз состоит не из
+                                                    одного места, коробка с вложенными документами будет отмечена
+                                                    соответствующим стикером.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spollers__item">
+                                <button type="button" data-spoller class="spollers__button">
+                                    <span class="spollers__name">наличный расчёт</span>
+                                    <span class="spollers__arrow">
+                                        <img loading="lazy" src="images/plus.svg" alt="" class="spollers-plus">
+                                        <img loading="lazy" src="images/minus.svg" alt="" class="spollers-minus">
+                                    </span>
+                                </button>
+                                <div class="spollers__body">
+                                    <div class="spollers__items">
+                                        <div class="spollers__top">
+                                            <div class="spollers__badge">При самовывозе</div>
+                                            <div class="spollers__title">
+                                                наличный расчёт
+                                            </div>
+                                            <img loading="lazy" src="images/delivery2.webp" alt=""
+                                                class="spollers__pic1">
+                                        </div>
+                                        <div class="spollers__bottom">
+                                            <div class="spollers__text">
+                                                <p>
+                                                    Оплата наличными доступна только при самовывозе. Вы можете оплатить
+                                                    заказ при получении на складе компании.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spollers__item">
+                                <button type="button" data-spoller class="spollers__button">
+                                    <span class="spollers__name">Банковская карта</span>
+                                    <span class="spollers__arrow">
+                                        <img loading="lazy" src="images/plus.svg" alt="" class="spollers-plus">
+                                        <img loading="lazy" src="images/minus.svg" alt="" class="spollers-minus">
+                                    </span>
+                                </button>
+                                <div class="spollers__body">
+                                    <div class="spollers__items">
+                                        <div class="spollers__top">
+                                            <div class="spollers__badge">Для физических лиц</div>
+                                            <div class="spollers__title">
+                                                Банковская карта
+                                            </div>
+                                            <img loading="lazy" src="images/delivery3.webp" alt=""
+                                                class="spollers__pic1">
+                                        </div>
+                                        <div class="spollers__bottom">
+                                            <div class="spollers__text">
+                                                <p>
+                                                    Безопасная онлайн-оплата банковской картой.<br> Принимаем
+                                                    карты Visa,
+                                                    Mastercard и Мир.
+                                                </p>
+                                            </div>
+                                            <div class="spollers__text2">
+                                                <p>
+                                                    Оплата картой для физических лиц возможна при сумме заказа
+                                                    <strong>от 30 000
+                                                        руб</strong>.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-workflow">
+                <div class="inner-wrap">
+                    <div class="block-workflow__content">
+                        <div class="title-inner-wrap">
+                            <div class="title-wrap">
+                                <h2 class="h2-title title-decor-tile">Порядок работы</h2>
+                            </div>
+                            <div class="text-wrap">
+                                <p>
+                                    Схема подходит для стандартных заказов и индивидуальных поставок с подбором упаковки
+                                    под
+                                    оборудование.
+                            </div>
+                        </div>
+                        <div class="items-inner-wrap scroll-element">
+                            <div class="block-workflow__body items-wrap">
+                                <div class="block-workflow__column column-red">
+                                    <div class="block-workflow__item">
+                                        <div class="block-workflow__step">шаг 1</div>
+                                        <div class="block-workflow__title">
+                                            Заявка
+                                        </div>
+                                        <p>
+                                            Вы отправляете запрос, указываете модели, количество, город доставки и
+                                            предпочтительный способ оплаты.
+                                        </p>
+                                    </div>
+                                    <img loading="lazy" src="images/workflow1.webp" alt="" class="block-workflow__pic1">
+                                </div>
+                                <div class="block-workflow__column">
+                                    <div class="block-workflow__item">
+                                        <div class="block-workflow__step">шаг 2</div>
+                                        <div class="block-workflow__title">
+                                            Подтверждение
+                                        </div>
+                                        <p>
+                                            Менеджер уточняет наличие, параметры заказа и согласует удобный вариант
+                                            отправки.
+                                        </p>
+                                    </div>
+                                    <img loading="lazy" src="images/workflow2.webp" alt="" class="block-workflow__pic1">
+                                </div>
+                                <div class="block-workflow__column">
+                                    <div class="block-workflow__item">
+                                        <div class="block-workflow__step">шаг 3</div>
+                                        <div class="block-workflow__title">
+                                            Оплата
+                                        </div>
+                                        <p>
+                                            Мы выставляем счётили подготавливаем другой согласованный способ оплаты.
+                                        </p>
+                                    </div>
+                                    <img loading="lazy" src="images/workflow3.webp" alt="" class="block-workflow__pic1">
+                                </div>
+                                <div class="block-workflow__column">
+                                    <div class="block-workflow__item">
+                                        <div class="block-workflow__step">шаг 4</div>
+                                        <div class="block-workflow__title">
+                                            Передача груза
+                                        </div>
+                                        <p>
+                                            Заказ передаётсяв транспортную компанию, курьерскую доставкуили выдаётся со
+                                            складапри самовывозе.
+                                        </p>
+                                    </div>
+                                    <img loading="lazy" src="images/workflow4.webp" alt="" class="block-workflow__pic1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery-form">
+                <img src="images/delivery-bg1.webp" alt="" class="delivery-form__bg1">
+                <img src="images/delivery-bg-mob.webp" alt="" class="delivery-form__bg2">
+                <div class="inner-wrap">
+                    <div class="delivery-form__content">
+                        <div class="delivery-form__body">
+                            <div class="delivery-form__top">
+                                <h2 class="h2-title">
+                                    Нужна помощь с доставкой?
+                                </h2>
+                                <p>
+                                    Оставьте заявку — подскажем подходящую транспортную компанию, рассчитаем удобный
+                                    формат отправки и подготовим документы по заказу.
+                                </p>
+                            </div>
+                            <div class="delivery-form__contacts">
+                                <div class="delivery-form__title">
+                                    Контакты
+                                </div>
+                                <div class="delivery-form__text">
+                                    <a href="tel:74994447097">+7 499 444-70-97</a>
+                                    <a href="mailto:sales+295493604@talos-case.ru">
+                                        sales+295493604@talos-case.ru
+                                    </a>
+                                    <p>
+                                        Москва, Юрловский проезд, 2с1
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <form action="/local/ajax/feedback.php" class="form-inner-wrap" method="post" id="feedback_form"
+                            enctype="multipart/form-data">
+
+                            <div class="frm-row">
+                                <div class="frm-field field-half">
+                                    <input type="text" class="form-input" placeholder="Имя*" name="fio" value=""
+                                        required="">
+                                </div>
+                                <div class="frm-field field-half">
+                                    <input type="email" class="form-input" placeholder="E-mail*" name="email" value=""
+                                        required="">
+                                </div>
+                                <div class="frm-field field-half">
+                                    <input type="tel" class="form-input" placeholder="Номер телефона*" name="phone"
+                                        value="" required="">
+                                </div>
+                                <div class="frm-field">
+                                    <textarea class="form-input"
+                                        placeholder="Куда доставить заказ и какой способ оплаты удобен?"
+                                        name="mess"></textarea>
+                                </div>
+                            </div>
+                            <div class="frm-row-submit">
+                                <div class="frm-field field-button">
+                                    <button type="submit" class="btn button-content">Отправить</button>
+                                </div>
+                                <div class="frm-field field-info">Нажимая на кнопку «Отправить», вы даете согласие на
+                                    обработку
+                                    своих <a href="/privacy/">персональных данных</a></div>
+
+                            </div>
+                            <div id="result"></div>
+                        </form>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="inner-wrap">
+                        <a href="" class="btn btn-action-ico ico-arrow-up" id="up"></a>
+                        <div class="info-wrap">
+                            © 2026 ООО «ТАЛОС КЕЙС» / Все права защищены </div>
+                        <div class="info-wrap"><a href="/privacy/">Политика конфиденциальности</a></div>
+                    </div>
+                </footer>
+            </div>
+
+        </main>
+    </div>
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>
