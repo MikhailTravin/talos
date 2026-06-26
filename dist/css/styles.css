@@ -1,76 +1,3 @@
-@charset "UTF-8";
-/*
-Псевдоэлемент-расширитель для кнопок:
-1. Помогает попадать по небольшим кнопкам
-2. Помогает отлавливать событие нажатия на кнопку при наличии в ней различных элементов
-*/
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
-
-input,
-button,
-textarea {
-  padding: 0;
-  background: none;
-  border: none;
-  outline: none;
-  color: inherit;
-}
-
-html,
-body {
-  height: 100%;
-  padding: 0;
-  scroll-behavior: smooth;
-  scrollbar-gutter: stable;
-}
-
-body {
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
-}
-
-p {
-  text-wrap: pretty;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-}
-
-ul,
-ol {
-  list-style-type: none;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
 .delivery-form {
   position: relative;
   padding: 106px 0px 14px 0px;
@@ -112,6 +39,9 @@ a {
   z-index: 5;
 }
 .delivery-form .footer {
+  background: transparent;
+}
+.delivery-form .footer .info-wrap {
   background: transparent;
 }
 @media (max-width: 1025px) {
