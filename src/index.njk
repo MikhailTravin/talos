@@ -11,7 +11,230 @@
         {% include 'blocks/header.njk' %}
         <main class="main">
 
-            <div class="block-delivery">
+            <div class="main-case-box cnt-section section-case-catalog block-intro">
+                <img src="images/delivery-bg.webp" alt="" class="block-intro__bg1">
+                <img src="images/delivery-bg1-mob.webp" alt="" class="block-intro__bg2">
+                <div class="inner-wrap ">
+                    <div class="breadcrumbs-box">
+                        <a href="javascript:history.back()" class="btn-action-back">
+                            <span class="btn-action-ico ico-arrow-att ico-arrow-prev"></span>
+                            <span class="button-title">Назад</span>
+                        </a>
+                        <div class="menu-inner-wrap">
+                            <ol class="menu">
+                                <li><a href="/">Главная</a></li>
+                                <li>Доставка и оплата</li>
+                            </ol>
+                        </div>
+                    </div>
+
+
+                    <div class="box-inner-wrap">
+
+
+                        <div class="case-tab-box __js-tab-block" data-tab="case-tab02">
+                            <div class="info-inner-wrap">
+                                <div class="title-inner-wrap">
+                                    <h1 class="h2-title section-title">Доставка и оплата</h1>
+                                    <p>
+                                        Доставляем продукцию по всей России и в страны ЕАЭС. Подберём удобный способ
+                                        отправки, подготовим документы и поможем организовать быструю передачу заказа в
+                                        транспортную компанию.
+                                    </p>
+                                </div>
+                                <div class="actions-inner-wrap">
+                                    <div class="action-wrap">
+                                        <a href="#block-delivery-terms" class="btn-action-arrow">Условия доставки</a>
+                                    </div>
+                                    <div class="action-wrap">
+                                        <a href="#block-delivery" class="btn-action-arrow">Способы оплаты</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="block-intro__content">
+                            <div class="items-inner-wrap scroll-element">
+                                <div class="block-intro__body items-wrap">
+                                    <div class="block-intro__column">
+                                        <img src="images/delivery6.webp" alt="">
+                                        <div class="block-intro__top">
+                                            <div class="block-intro__title">
+                                                По всей России и ЕАЭС
+                                            </div>
+                                            <p>
+                                                Отправляем продукцию в регионы и страны ЕАЭС удобными транспортными
+                                                компаниями.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="block-intro__column">
+                                        <img src="images/delivery7.webp" alt="">
+                                        <div class="block-intro__top">
+                                            <div class="block-intro__title">
+                                                Оперативно по Москве
+                                            </div>
+                                            <p>
+                                                Для Москвы и ближайшего Подмосковья доступна быстрая доставка через
+                                                Яндекс
+                                                Доставку.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="block-intro__column">
+                                        <img src="images/delivery8.webp" alt="">
+                                        <div class="block-intro__top">
+                                            <div class="block-intro__title">
+                                                Документы к заказу
+                                            </div>
+                                            <p>
+                                                Для юридических лиц предоставляем договор, счёт и УПД вместе с грузом.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="block-delivery-terms" class="block-delivery-terms">
+                <div class="inner-wrap">
+                    <div class="block-delivery-terms__content">
+                        <div class="title-inner-wrap">
+                            <div class="title-wrap">
+                                <h2 class="h2-title title-decor-tile">Условия доставки</h2>
+                            </div>
+                            <div class="text-wrap">
+                                <p>
+                                    Мы поможем подобрать оптимальный способ отправки с учётом города, объёма заказа,
+                                    срочности и требований к получению груза.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="block-delivery-terms__body">
+                            <div data-spollers="992,max" data-one-spoller class="spollers">
+                                <div class="spollers__item spollers-black">
+                                    <button type="button" data-spoller class="spollers__button">
+                                        <span class="spollers__name">Доставка в регионы транспортными компаниями</span>
+                                        <span class="spollers__arrow">
+                                            <img loading="lazy" src="images/plus-delivery.svg" alt=""
+                                                class="spollers-plus">
+                                            <img loading="lazy" src="images/minus-delivery.svg" alt=""
+                                                class="spollers-minus">
+                                        </span>
+                                    </button>
+                                    <div class="spollers__body">
+                                        <div class="spollers-delivery-terms">
+                                            <img loading="lazy" src="images/map-delivery.webp" alt=""
+                                                class="spollers-delivery-terms__pic1">
+                                            <div class="spollers-delivery-terms__top">
+                                                <div class="spollers-delivery-terms__title">
+                                                    Доставка в регионы транспортными компаниями
+                                                </div>
+                                                <p>
+                                                    Для отправки в регионы используем крупные транспортные компании и
+                                                    можем передать заказ любым удобным для вас перевозчиком.
+                                                </p>
+                                            </div>
+                                            <div class="spollers-delivery-terms__center">
+                                                <div class="spollers-delivery-terms__brands">
+                                                    <div class="spollers-delivery-terms__brand">
+                                                        <img src="images/logo1-delivery.svg" alt="">
+                                                        <span>Деловые линии</span>
+                                                    </div>
+                                                    <div class="spollers-delivery-terms__brand">
+                                                        <img src="images/logo2-delivery.svg" alt="">
+                                                        <span>Компания ПЭК</span>
+                                                    </div>
+                                                    <div class="spollers-delivery-terms__brand">
+                                                        <img src="images/logo3-delivery.svg" alt="">
+                                                        <span>Компания DPD</span>
+                                                    </div>
+                                                    <div class="spollers-delivery-terms__brand">
+                                                        <img src="images/logo4-delivery.svg" alt="">
+                                                        <span>ЖелДорЭкспедиция</span>
+                                                    </div>
+                                                </div>
+                                                <p>
+                                                    Любая другая транспортная компания по согласованию
+                                                </p>
+                                            </div>
+                                            <div class="spollers-delivery-terms__bottom">
+                                                <p>
+                                                    Доставку до терминала ТК в вашем городе вы можете рассчитать и
+                                                    заказать самостоятельно. Для ускорения отправки рекомендуем передать
+                                                    организацию доставки нам.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="block-delivery-terms__columns">
+                                <div data-spollers="992,max" data-one-spoller class="spollers">
+                                    <div class="spollers__item">
+                                        <button type="button" data-spoller class="spollers__button">
+                                            <span class="spollers__name">Москва и ближайшее Подмосковье</span>
+                                            <span class="spollers__arrow">
+                                                <img loading="lazy" src="images/plus-delivery.svg" alt=""
+                                                    class="spollers-plus">
+                                                <img loading="lazy" src="images/minus-delivery.svg" alt=""
+                                                    class="spollers-minus">
+                                            </span>
+                                        </button>
+                                        <div class="spollers__body">
+                                            <div class="spollers-delivery-terms">
+                                                <div class="spollers-delivery-terms__top">
+                                                    <div class="spollers-delivery-terms__title">
+                                                        Москва и ближайшее Подмосковье
+                                                    </div>
+                                                    <p>
+                                                        Оперативная доставка по Москве и ближайшему Подмосковью
+                                                        выполняется через Яндекс Доставку.
+                                                    </p>
+                                                </div>
+                                                <img loading="lazy" src="images/delivery4.webp" alt=""
+                                                    class="spollers-delivery-terms__pic1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="spollers__item">
+                                        <button type="button" data-spoller class="spollers__button">
+                                            <span class="spollers__name">Самовывоз со склада</span>
+                                            <span class="spollers__arrow">
+                                                <img loading="lazy" src="images/plus-delivery.svg" alt=""
+                                                    class="spollers-plus">
+                                                <img loading="lazy" src="images/minus-delivery.svg" alt=""
+                                                    class="spollers-minus">
+                                            </span>
+                                        </button>
+                                        <div class="spollers__body">
+                                            <div class="spollers-delivery-terms">
+                                                <div class="spollers-delivery-terms__top">
+                                                    <div class="spollers-delivery-terms__title">
+                                                        Самовывоз<br> со склада
+                                                    </div>
+                                                    <p>
+                                                        Вы можете забрать заказ самостоятельно со склада компании по
+                                                        адресу: <strong>г. Москва, Юрловский проезд, 2с1.</strong>
+                                                    </p>
+                                                </div>
+                                                <img loading="lazy" src="images/delivery5.webp" alt=""
+                                                    class="spollers-delivery-terms__pic1">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="block-delivery" class="block-delivery">
                 <div class="inner-wrap">
                     <div class="block-delivery__content">
                         <div class="title-inner-wrap">
@@ -25,13 +248,14 @@
                                 </p>
                             </div>
                         </div>
-                        <div data-spollers="992,max" class="spollers">
+                        <div data-spollers="992,max" data-one-spoller class="spollers">
                             <div class="spollers__item">
                                 <button type="button" data-spoller class="spollers__button">
                                     <span class="spollers__name">Безналичный расчёт</span>
                                     <span class="spollers__arrow">
-                                        <img loading="lazy" src="images/plus.svg" alt="" class="spollers-plus">
-                                        <img loading="lazy" src="images/minus.svg" alt="" class="spollers-minus">
+                                        <img loading="lazy" src="images/plus-delivery.svg" alt="" class="spollers-plus">
+                                        <img loading="lazy" src="images/minus-delivery.svg" alt=""
+                                            class="spollers-minus">
                                     </span>
                                 </button>
                                 <div class="spollers__body">
@@ -47,7 +271,8 @@
                                         <div class="spollers__bottom">
                                             <div class="spollers__text">
                                                 <p>
-                                                    Выставляем счёт на оплату <strong>с НДС 22%</strong>. Предоставляем
+                                                    Выставляем счёт на оплату <strong>с НДС 22%</strong>.
+                                                    Предоставляем
                                                     полный
                                                     пакет
                                                     закрывающих документов: договор, счёт и УПД.
@@ -55,8 +280,10 @@
                                             </div>
                                             <div class="spollers__text2">
                                                 <p>
-                                                    Документы отправляются вместе с грузом. Если груз состоит не из
-                                                    одного места, коробка с вложенными документами будет отмечена
+                                                    Документы отправляются вместе с грузом. Если груз состоит не
+                                                    из
+                                                    одного места, коробка с вложенными документами будет
+                                                    отмечена
                                                     соответствующим стикером.
                                                 </p>
                                             </div>
@@ -68,8 +295,9 @@
                                 <button type="button" data-spoller class="spollers__button">
                                     <span class="spollers__name">наличный расчёт</span>
                                     <span class="spollers__arrow">
-                                        <img loading="lazy" src="images/plus.svg" alt="" class="spollers-plus">
-                                        <img loading="lazy" src="images/minus.svg" alt="" class="spollers-minus">
+                                        <img loading="lazy" src="images/plus-delivery.svg" alt="" class="spollers-plus">
+                                        <img loading="lazy" src="images/minus-delivery.svg" alt=""
+                                            class="spollers-minus">
                                     </span>
                                 </button>
                                 <div class="spollers__body">
@@ -85,7 +313,8 @@
                                         <div class="spollers__bottom">
                                             <div class="spollers__text">
                                                 <p>
-                                                    Оплата наличными доступна только при самовывозе. Вы можете оплатить
+                                                    Оплата наличными доступна только при самовывозе. Вы можете
+                                                    оплатить
                                                     заказ при получении на складе компании.
                                                 </p>
                                             </div>
@@ -97,8 +326,9 @@
                                 <button type="button" data-spoller class="spollers__button">
                                     <span class="spollers__name">Банковская карта</span>
                                     <span class="spollers__arrow">
-                                        <img loading="lazy" src="images/plus.svg" alt="" class="spollers-plus">
-                                        <img loading="lazy" src="images/minus.svg" alt="" class="spollers-minus">
+                                        <img loading="lazy" src="images/plus-delivery.svg" alt="" class="spollers-plus">
+                                        <img loading="lazy" src="images/minus-delivery.svg" alt=""
+                                            class="spollers-minus">
                                     </span>
                                 </button>
                                 <div class="spollers__body">
@@ -144,7 +374,8 @@
                             </div>
                             <div class="text-wrap">
                                 <p>
-                                    Схема подходит для стандартных заказов и индивидуальных поставок с подбором упаковки
+                                    Схема подходит для стандартных заказов и индивидуальных поставок с подбором
+                                    упаковки
                                     под
                                     оборудование.
                             </div>
@@ -158,7 +389,8 @@
                                             Заявка
                                         </div>
                                         <p>
-                                            Вы отправляете запрос, указываете модели, количество, город доставки и
+                                            Вы отправляете запрос, указываете модели, количество, город доставки
+                                            и
                                             предпочтительный способ оплаты.
                                         </p>
                                     </div>
@@ -171,7 +403,8 @@
                                             Подтверждение
                                         </div>
                                         <p>
-                                            Менеджер уточняет наличие, параметры заказа и согласует удобный вариант
+                                            Менеджер уточняет наличие, параметры заказа и согласует удобный
+                                            вариант
                                             отправки.
                                         </p>
                                     </div>
@@ -184,7 +417,8 @@
                                             Оплата
                                         </div>
                                         <p>
-                                            Мы выставляем счётили подготавливаем другой согласованный способ оплаты.
+                                            Мы выставляем счётили подготавливаем другой согласованный способ
+                                            оплаты.
                                         </p>
                                     </div>
                                     <img loading="lazy" src="images/workflow3.webp" alt="" class="block-workflow__pic1">
@@ -196,7 +430,8 @@
                                             Передача груза
                                         </div>
                                         <p>
-                                            Заказ передаётсяв транспортную компанию, курьерскую доставкуили выдаётся со
+                                            Заказ передаётсяв транспортную компанию, курьерскую доставкуили
+                                            выдаётся со
                                             складапри самовывозе.
                                         </p>
                                     </div>
@@ -219,7 +454,8 @@
                                     Нужна помощь с доставкой?
                                 </h2>
                                 <p>
-                                    Оставьте заявку — подскажем подходящую транспортную компанию, рассчитаем удобный
+                                    Оставьте заявку — подскажем подходящую транспортную компанию, рассчитаем
+                                    удобный
                                     формат отправки и подготовим документы по заказу.
                                 </p>
                             </div>
@@ -264,7 +500,8 @@
                                 <div class="frm-field field-button">
                                     <button type="submit" class="btn button-content">Отправить</button>
                                 </div>
-                                <div class="frm-field field-info">Нажимая на кнопку «Отправить», вы даете согласие на
+                                <div class="frm-field field-info">Нажимая на кнопку «Отправить», вы даете
+                                    согласие на
                                     обработку
                                     своих <a href="/privacy/">персональных данных</a></div>
 
