@@ -1,3 +1,9 @@
+@charset "UTF-8";
+/*
+Псевдоэлемент-расширитель для кнопок:
+1. Помогает попадать по небольшим кнопкам
+2. Помогает отлавливать событие нажатия на кнопку при наличии в ней различных элементов
+*/
 .delivery-form {
   position: relative;
   padding: 106px 0px 97px 0px;
@@ -285,6 +291,9 @@
     font-size: 16px;
   }
 }
+.delivery-form__text p {
+  text-decoration: none;
+}
 .delivery-form__text a {
   color: inherit;
   -webkit-transition: opacity 0.3s;
@@ -305,6 +314,11 @@
   left: 0;
   width: 100%;
   background: transparent;
+}
+@media (max-width: 1025px) {
+  .footer.footer-delivery {
+    bottom: 73px;
+  }
 }
 .footer.footer-delivery .inner-wrap::before {
   content: "";
@@ -1549,5 +1563,9 @@
   .block-intro__title {
     font-size: 12px;
   }
+}
+
+.scroll-element {
+  scrollbar-width: thin;
 }
 /*# sourceMappingURL=maps/styles.css.map */
