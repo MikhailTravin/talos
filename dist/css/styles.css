@@ -24,18 +24,18 @@
 }
 .delivery-form::before {
   content: "";
-  content: "";
   display: block;
   width: 35.5rem;
-  height: 69.2rem;
+  height: 540px;
   position: absolute;
   background: url(/local/templates/talos/css/../img/main/decor-logo.svg) center top no-repeat;
-  background-size: 100% auto;
-  bottom: 0;
-  left: 50%;
-  margin-left: -50vw;
+  background-size: 100% 100%;
+  left: -90px;
   pointer-events: none;
   z-index: 5;
+  top: 50%;
+  -webkit-transform: translate(0px, -50%);
+          transform: translate(0px, -50%);
 }
 @media (max-width: 1025px) {
   .delivery-form::before {
@@ -354,15 +354,14 @@
   content: "";
   display: block;
   width: 27.2rem;
-  height: 23rem;
+  height: 270px;
   position: absolute;
   background: url(/local/templates/talos/css/../img/main/decor01.svg) center top no-repeat;
   background-size: 100% auto;
   bottom: 0;
-  left: 50%;
+  left: 0;
   pointer-events: none;
   z-index: 2;
-  margin-left: -50vw;
 }
 @media (max-width: 1025px) {
   .block-workflow::before {
