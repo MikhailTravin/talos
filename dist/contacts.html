@@ -1,0 +1,2045 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<title>Контакты</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+		<style>
+			:root {
+				--clr-base: #191919;
+				--clr-att: #F91C1C;
+				--clr-bg-light: #f1f1f1;
+				--clr-bg-att: #F91C1C;
+				--clr-border: #4B4B4B;
+				--min: 375px;
+				--max: 1500px;
+				--paddingContainer: 12px;
+				font-size: 10px
+			}
+
+			*,
+			:before,
+			:after {
+				box-sizing: border-box
+			}
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				min-width: var(--min)
+			}
+
+			body {
+				background: #fff;
+				color: var(--clr-base);
+				font-size: 14px;
+				line-height: 1.28571429;
+				overflow-x: hidden
+			}
+
+			img,
+			svg {
+				display: block;
+				max-width: 100%
+			}
+
+			a {
+				text-decoration: none;
+				color: inherit
+			}
+
+			.wrap,
+			.header,
+			.footer,
+			.cnt-section {
+				position: relative;
+				clear: both;
+				min-width: var(--min);
+				width: 100%
+			}
+
+			.wrap {
+				overflow: hidden;
+				min-height: 100vh;
+				padding-bottom: 74px
+			}
+
+			.wrap.wrap-main {
+				padding-top: 0
+			}
+
+			.inner-wrap,
+			.page-full {
+				position: relative;
+				clear: both;
+				margin: 0 auto;
+				padding-left: var(--paddingContainer);
+				padding-right: var(--paddingContainer);
+				min-width: var(--min);
+				max-width: var(--max);
+				width: 100%
+			}
+
+			.header {
+				z-index: 99;
+				background: var(--clr-base);
+				color: #fff;
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0
+			}
+
+			.header .inner-wrap {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 0 74px 0 0;
+				height: 60px
+			}
+
+			.header .logo-wrap {
+				width: 148px;
+				flex-shrink: 0;
+				height: 60px
+			}
+
+			.header .logo {
+				background: var(--clr-bg-att);
+				height: 60px;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center
+			}
+
+			.header .logo img {
+				width: 106px;
+				height: auto;
+				flex-shrink: 0
+			}
+
+			.header .actions-wrap,
+			.header .contacts-outer-wrap {
+				display: none
+			}
+
+			.header .search-wrap {
+				position: static;
+				width: 40px;
+				height: 40px;
+				flex-shrink: 0
+			}
+
+			.header .menu-wrap {
+				width: 51px;
+				height: 102px;
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 10
+			}
+
+			.mobile-panel-box {
+				display: block;
+				z-index: 100;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 74px;
+				border-top: 1px solid var(--clr-border);
+				background-color: var(--clr-base);
+				line-height: 1
+			}
+
+			.mobile-panel-box .inner-wrap {
+				padding: 0 0 0 12px;
+				height: 73px;
+				display: flex;
+				justify-content: center
+			}
+
+			.mobile-panel-box .action-wrap {
+				flex: 1;
+				max-width: 100px
+			}
+
+			.mobile-panel-box .button-wrap {
+				flex-shrink: 0;
+				padding-left: 12px
+			}
+
+			.mobile-panel-box .btn {
+				padding: 0 19px;
+				height: 73px;
+				font-size: 11px
+			}
+
+			.page-full {
+				padding-top: 24px
+			}
+
+			.top-box {
+				min-height: 690px;
+				padding: 120px 0 140px;
+				margin-bottom: 52px;
+				position: relative;
+				font-size: 20px;
+				line-height: 1.5;
+				color: #fff
+			}
+
+			.top-box .photo-inner-wrap {
+				display: block;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 50%;
+				width: 100vw;
+				min-width: 375px;
+				transform: translateX(-50%)
+			}
+
+			.top-box .photo-inner-wrap:before {
+				content: "";
+				display: block;
+				position: absolute;
+				inset: 0;
+				z-index: 1;
+				background: radial-gradient(51.67% 34.51% at 65.61% 70.44%, rgba(27, 27, 27, 0) 28.65%, rgba(27, 27, 27, .42) 69.58%, rgba(27, 27, 27, .5) 100%)
+			}
+
+			.top-box .photo-inner-wrap .elm-photo {
+				position: absolute;
+				inset: 0;
+				display: block;
+				overflow: hidden
+			}
+
+			.top-box .photo-inner-wrap img {
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover
+			}
+
+			.top-box .title-inner-wrap {
+				position: relative;
+				max-width: 500px;
+				z-index: 2
+			}
+
+			.top-box .title-inner-wrap:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 12px;
+				bottom: 8px;
+				left: calc(var(--paddingContainer) * -1);
+				width: 1px;
+				border-left: 1px solid var(--clr-att)
+			}
+
+			.top-box .h1-title {
+				margin: 0 0 .7em;
+				line-height: 1.73076923
+			}
+
+			.top-box .btn {
+				position: absolute;
+				bottom: 30px;
+				right: 25px;
+				z-index: 3
+			}
+
+			.btn {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+				text-align: center;
+				vertical-align: middle
+			}
+
+			.btn.button-rounded {
+				width: 97px;
+				height: 97px;
+				min-width: 0;
+				border-radius: 50%;
+				overflow: visible;
+				font-size: 14px;
+				text-transform: uppercase;
+				font-weight: 400;
+				padding: 0;
+				color: #fff
+			}
+
+			@media (min-width:1024px) {
+				:root {
+					--paddingContainer: 30px
+				}
+
+				.wrap {
+					padding-bottom: 0
+				}
+
+				.header {
+					position: relative
+				}
+
+				.header .inner-wrap {
+					max-width: 1920px;
+					padding-right: 113px;
+					height: 10rem
+				}
+
+				.header .logo-wrap {
+					width: 26.3rem;
+					height: 10rem
+				}
+
+				.header .logo {
+					height: 10rem
+				}
+
+				.header .logo img {
+					width: 17.7rem;
+					height: auto
+				}
+
+				.header .menu-wrap {
+					width: 80px;
+					height: 143px
+				}
+
+				.header .actions-wrap {
+					display: flex;
+					padding: 0 3.2rem 0 3.7rem;
+					flex-shrink: 0
+				}
+
+				.header .contacts-outer-wrap {
+					display: flex;
+					flex: 1;
+					align-items: center;
+					position: relative;
+					overflow: hidden;
+					padding-left: 3.5rem
+				}
+
+				.top-box {
+					min-height: 96rem;
+					margin-bottom: 6rem;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					font-size: 2.8rem;
+					line-height: 1.42857143;
+					padding: 22rem 0 15rem
+				}
+
+				.top-box .title-inner-wrap {
+					max-width: 100%
+				}
+
+				.top-box .title-inner-wrap p {
+					max-width: 21.42857143em
+				}
+
+				.top-box .btn {
+					position: relative;
+					margin-top: 2.2rem;
+					margin-left: 41.5rem;
+					bottom: auto;
+					right: auto
+				}
+
+				.top-box .h1-title {
+					line-height: 1.28846154;
+					max-width: 85rem;
+					margin-bottom: .65em
+				}
+
+				.mobile-panel-box {
+					display: none
+				}
+			}
+
+			@media (min-width:1400px) {
+				:root {
+					--paddingContainer: 42px
+				}
+			}
+		</style>
+		<link rel="preload" href="css/font-robots.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="/local/templates/talos/fonts/font-robots.css">
+		</noscript>
+		<link rel="preload" href="css/reset.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="/local/templates/talos/css/reset.min.css">
+		</noscript>
+		<link rel="preload" href="css/jquery-ui.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="/local/templates/talos/css/jquery-ui.min.css">
+		</noscript>
+		<link rel="preload" href="css/slick.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="/local/templates/talos/css/slick.min.css">
+		</noscript>
+		<link rel="preload" href="css/style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+		<noscript>
+			<link rel="stylesheet" href="/local/templates/talos/css/style.min.css?v=1783576838">
+		</noscript>
+
+		<noscript>
+			<div><img src="https://mc.yandex.ru/watch/96722873" style="position:absolute; left:-9999px;" alt="" /></div>
+		</noscript>
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+		<link rel="canonical" href="https://talos-case.ru/contacts/">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="robots" content="index, follow">
+		<meta name="keywords" content="КЕЙСЫ И КОНТЕЙНЕРЫ РОССИЙСКОГО ПРОИЗВОДСТВА">
+		<meta name="description" content="КЕЙСЫ И КОНТЕЙНЕРЫ РОССИЙСКОГО ПРОИЗВОДСТВА">
+		<script data-skip-moving="true">
+			(function(w, d) {
+				var v = w.frameCacheVars = {
+					"CACHE_MODE": "HTMLCACHE",
+					"storageBlocks": [],
+					"dynamicBlocks": {
+						"LkGdQn": "d23507a72db5"
+					},
+					"AUTO_UPDATE": true,
+					"AUTO_UPDATE_TTL": 120,
+					"version": 2
+				};
+				var inv = false;
+				if (v.AUTO_UPDATE === false) {
+					if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0) {
+						var lm = Date.parse(d.lastModified);
+						if (!isNaN(lm)) {
+							var td = new Date().getTime();
+							if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td) {
+								w.frameRequestStart = false;
+								w.preventAutoUpdate = true;
+								return;
+							}
+							inv = true;
+						}
+					} else {
+						w.frameRequestStart = false;
+						w.preventAutoUpdate = true;
+						return;
+					}
+				}
+				var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);
+				if (!r) {
+					return;
+				}
+				w.frameRequestStart = true;
+				var m = v.CACHE_MODE;
+				var l = w.location;
+				var x = new Date().getTime();
+				var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");
+				var u = l.protocol + "//" + l.host + l.pathname + q;
+				r.open("GET", u, true);
+				r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");
+				r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");
+				r.setRequestHeader("BX-CACHE-MODE", m);
+				r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");
+				if (inv) {
+					r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");
+				}
+				try {
+					r.setRequestHeader("BX-REF", d.referrer || "");
+				} catch (e) {}
+				if (m === "APPCACHE") {
+					r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));
+					r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");
+				}
+				r.onreadystatechange = function() {
+					if (r.readyState != 4) {
+						return;
+					}
+					var a = r.getResponseHeader("BX-RAND");
+					var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;
+					if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)) {
+						var f = {
+							error: true,
+							reason: a != x ? "bad_rand" : "bad_status",
+							url: u,
+							xhr: r,
+							status: r.status
+						};
+						if (w.BX && w.BX.ready && b) {
+							BX.ready(function() {
+								setTimeout(function() {
+									BX.onCustomEvent("onFrameDataRequestFail", [f]);
+								}, 0);
+							});
+						}
+						w.frameRequestFail = f;
+						return;
+					}
+					if (b) {
+						b.onFrameDataReceived(r.responseText);
+						if (!w.frameUpdateInvoked) {
+							b.update(false);
+						}
+						w.frameUpdateInvoked = true;
+					} else {
+						w.frameDataString = r.responseText;
+					}
+				};
+				r.send();
+				var p = w.performance;
+				if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize) {
+					var e = 'resourcetimingbufferfull';
+					var h = function() {
+						if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted) {
+							p.removeEventListener(e, h);
+						} else {
+							p.setResourceTimingBufferSize(p.getEntries().length + 50);
+						}
+					};
+					p.addEventListener(e, h);
+				}
+			})(window, document);
+		</script>
+		<script data-skip-moving="true">
+			(function(w, d, n) {
+				var cl = "bx-core";
+				var ht = d.documentElement;
+				var htc = ht ? ht.className : undefined;
+				if (htc === undefined || htc.indexOf(cl) !== -1) {
+					return;
+				}
+				var ua = n.userAgent;
+				if (/(iPad;)|(iPhone;)/i.test(ua)) {
+					cl += " bx-ios";
+				} else if (/Windows/i.test(ua)) {
+					cl += ' bx-win';
+				} else if (/Macintosh/i.test(ua)) {
+					cl += " bx-mac";
+				} else if (/Linux/i.test(ua) && !/Android/i.test(ua)) {
+					cl += " bx-linux";
+				} else if (/Android/i.test(ua)) {
+					cl += " bx-android";
+				}
+				cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");
+				cl += w.devicePixelRatio && w.devicePixelRatio >= 2 ? " bx-retina" : " bx-no-retina";
+				if (/Safari/i.test(ua) && !/Chrome/i.test(ua)) {
+					cl += " bx-safari";
+				} else if (/AppleWebKit/.test(ua)) {
+					cl += " bx-chrome";
+				} else if (/Opera/.test(ua)) {
+					cl += " bx-opera";
+				} else if (/Firefox/.test(ua)) {
+					cl += " bx-firefox";
+				}
+				ht.className = htc ? htc + " " + cl : cl;
+			})(window, document, navigator);
+		</script>
+
+
+		<link href="css/template_8d540b5a681ed25befcb9bec59121119_v1.css" type="text/css" rel="stylesheet" data-template-style="true">
+
+
+
+
+
+
+
+		<meta property="og:title" content="Контакты">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://caserun1.beget.tech/contacts/">
+		<meta property="og:description" content="КЕЙСЫ И КОНТЕЙНЕРЫ РОССИЙСКОГО ПРОИЗВОДСТВА">
+
+
+
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFFL3KR7" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<!-- wrap -->
+
+		<div class="wrap wrap-light wrap-footer-light ">
+
+			<!-- header -->
+
+
+			<header class="header">
+				<div class="inner-wrap">
+					<div class="logo-wrap">
+						<a href="/" class="logo">
+							<img src="images/logo.svg" width="177" height="45" alt="">
+						</a>
+					</div>
+					<div class="contacts-outer-wrap">
+						<div class="contacts-wrap">
+							<div class="cnt-wrap">
+								<div class="elm-ico">
+									<img src="images/location.svg" width="24" height="24" alt="">
+								</div>
+								Москва, Юрловский проезд, 2с1
+							</div>
+							<div class="cnt-wrap">
+								<div class="elm-ico">
+									<img src="images/email.svg" width="24" height="24" alt="">
+								</div>
+								<a href="mailto:sales@talos-case.ru">sales@talos-case.ru</a>
+							</div>
+						</div>
+						<div class="contacts-soc-wrap">
+							<div class="phone-wrap">
+								<div class="phone-number">
+									<a href="tel:84950858566" class="link-phone">+7 495 085-85-66</a>
+								</div>
+								<div class="shedule-info">пн-пт: с 9:00 до 18:00</div>
+								<div class="email-mobile"><a href="mailto:sales@talos-case.ru">sales@talos-case.ru</a></div>
+							</div>
+							<div class="soc-wrap">
+								<a href="https://wa.me/+79688930344 " target="_blank" class="btn-action-ico button-soc">
+									<img src="images/soc-wa.svg" alt=""> </a>
+								<a href="tg://resolve?domain=taloscase" target="_blank" class="btn-action-ico button-soc">
+									<img src="images/soc-tg.svg" alt=""> </a>
+							</div>
+						</div>
+					</div>
+					<div class="actions-wrap">
+						<div class="action-wrap">
+							<a href="/catalog/zashchitnye-germetichnye-kejsy/" class="btn button-header __js-popup-open" data-popup="popup-catalog-search">Каталог продукции</a>
+						</div>
+						<div class="action-wrap">
+							<a href="" class="btn button-header js-popup-open" data-popup="popup-order">Оставить заявку</a>
+						</div>
+					</div>
+
+					<div class="search-wrap popup-search-wrap js-popup-wrap">
+						<a href="" class="btn-popup btn-action-ico ico-search js-btn-popup-toggle js-popup-open" data-popup="popup-catalog-search" aria-label="Открыть поиск"></a>
+						<div class="popup-content-block js-popup-block" id="title-search">
+							<a href="" class="btn-popup-close btn-action-ico ico-close js-btn-popup-close" aria-label="Закрыть поиск"></a>
+							<form action="/catalog/zashchitnye-germetichnye-kejsy/" class="frm-main-search">
+								<input id="title-search-input" type="text" name="q" value="" size="40" maxlength="50" autocomplete="off" class="form-input" placeholder="Поиск модели по каталогу (например, Т-210)" aria-label="Поиск модели по каталогу">
+								<input name="s" class="btn-action-ico ico-search" type="submit" value="Поиск" aria-label="Искать">
+							</form>
+						</div>
+					</div>
+
+
+					<div class="menu-wrap popup-menu-wrap js-popup-wrap">
+						<a href="" class="btn-popup btn-popup-menu js-btn-popup-toggle">
+							<span class="btn-action-ico ico-menu"></span>
+							<span class="button-title">Меню</span>
+						</a>
+						<div class="popup-content-block js-popup-block">
+							<a href="" class="btn-popup-close btn-action-ico ico-close js-btn-popup-close" aria-label="Закрыть окно"></a>
+							<div class="menu-inner-wrap">
+								<div class="menu-scroll-wrap">
+									<ul class="menu">
+										<li>
+											<span class="btn-menu">Разделы</span>
+											<div id="bxdynamic_LkGdQn_start" style="display:none"></div>
+											<ul>
+
+												<li><a href="/about/">О компании</a></li>
+
+												<li><a href="/proizvodstvo-na-zakaz/">Производство на заказ</a></li>
+
+												<li><a href="/publications/">Статьи и новости</a></li>
+
+												<li><a href="/delivery/">Доставка и оплата</a></li>
+
+												<li><a href="/contacts/" class="selected">Контакты</a></li>
+
+
+											</ul>
+											<div id="bxdynamic_LkGdQn_end" style="display:none"></div>
+										</li>
+										<li>
+											<span class="btn-menu">Каталог</span>
+											<ul>
+												<li class="submenu">
+													<a href="/catalog/zashchitnye-germetichnye-kejsy/" class="btn-submenu">Защитные Кейсы</a>
+													<ul>
+														<li class="elm-hidden-desktop"><a href="/catalog/zashchitnye-germetichnye-kejsy/">Все</a></li>
+														<li><a href="/catalog/zashchitnye-germetichnye-kejsy/">Малые</a>
+														</li>
+														<li><a href="/catalog/zashchitnye-germetichnye-kejsy/">Средние</a>
+														</li>
+														<li><a href="/catalog/zashchitnye-germetichnye-kejsy/">Большие</a>
+														</li>
+														<li><a href="/catalog/zashchitnye-germetichnye-kejsy/">Длинные
+																оружейные</a></li>
+													</ul>
+												</li>
+												<li class="submenu">
+													<a href="/catalog/rekovye-keysy/" class="btn-submenu">Рэковые кейсы</a>
+													<ul>
+														<li class="elm-hidden-desktop"><a href="/catalog/rekovye-keysy/">Все</a></li>
+														<li><a href="/catalog/rekovye-keysy/">Лайт</a></li>
+														<li><a href="/catalog/rekovye-keysy/">Классик</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="/catalog/udaroprochnye-kontejnery/" class="btn-submenu">Ударопрочные Контейнеры</a>
+												</li>
+												<li>
+													<a href="/specification/zashchitnye-germetichnye-kejsy/" class="btn-submenu">Спецификация</a>
+												</li>
+												<li>
+													<a href="/catalog/transportirovochnye-kofry/" class="btn-submenu">Транспортировочные кофры</a>
+												</li>
+
+											</ul>
+										</li>
+									</ul>
+									<a href="" class="btn-submenu-back">Назад</a>
+								</div>
+							</div>
+							<div class="contacts-mobile-wrap">
+								<div class="contacts-wrap">
+									<div class="cnt-wrap">
+										<div class="elm-ico">
+											<img src="images/location.svg" width="24" height="24" alt="">
+										</div>
+										Москва, Юрловский проезд, 2с1
+									</div>
+									<div class="cnt-wrap">
+										<div class="elm-ico">
+											<img src="images/email.svg" width="24" height="24" alt="">
+										</div>
+										<a href="mailto:sales@talos-case.ru">sales@talos-case.ru</a>
+									</div>
+								</div>
+								<div class="contacts-soc-wrap">
+									<div class="phone-wrap">
+										<div class="phone-number">
+											<a href="tel:84950858566" class="link-phone">+7 495 085-85-66</a>
+										</div>
+										<div class="shedule-info">пн-пт: с 9:00 до 18:00</div>
+									</div>
+									<div class="soc-wrap">
+										<a href="https://wa.me/+79688930344 " target="_blank" class="btn-action-ico button-soc"> <img src="images/soc-wa.svg" alt=""> </a>
+										<a href="tg://resolve?domain=taloscase" target="_blank" class="btn-action-ico button-soc"> <img src="images/soc-tg.svg" alt=""> </a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</header>
+			<!-- /header -->
+
+			<!--mobile-panel-box-->
+			<div class="mobile-panel-box cnt-section ">
+				<div class="inner-wrap">
+					<div class="action-wrap">
+						<a href="/" class="btn-header-mobile">
+							<span class="button-ico">
+								<img src="images/mobile-logo.svg" width="27" height="26" alt="">
+							</span>
+							<span class="button-title">Главная</span>
+						</a>
+					</div>
+					<div class="action-wrap">
+						<a href="/catalog/zashchitnye-germetichnye-kejsy/" class="btn-header-mobile">
+							<span class="button-ico">
+								<img src="images/mobile-catalog.svg" width="32" height="26" alt="">
+							</span>
+							<span class="button-title">Каталог</span>
+						</a>
+					</div>
+
+					<div class="action-wrap wrap-cart ">
+						<a href="/cart/" class="btn-header-mobile incart" data-count="0">
+							<span class="button-ico">
+								<img src="images/mobile-cart.svg" width="37" height="29" alt="">
+							</span>
+							<span class="button-title">Корзина</span>
+						</a>
+					</div>
+
+					<div class="button-wrap">
+						<a href="" class="btn js-popup-open" data-popup="popup-order">Оставить заявку</a>
+					</div>
+				</div>
+			</div>
+			<!--/mobile-panel-box-->
+
+
+
+
+
+			<!--page-full-->
+			<div class="page-full">
+
+				<!--breadcrumbs-box-->
+				<div class="breadcrumbs-box">
+					<a href="javascript:history.back()" class="btn-action-back">
+						<span class="btn-action-ico ico-arrow-att ico-arrow-prev"></span>
+						<span class="button-title">Назад</span>
+					</a>
+					<div class="menu-inner-wrap">
+						<ol class="menu" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+							<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"><span itemprop="name">Главная</span></a>
+								<meta itemprop="position" content="1">
+							</li>
+							<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem"><span itemprop="name">Контакты</span>
+								<meta itemprop="position" content="2">
+							</li>
+						</ol>
+					</div>
+				</div>
+				<!--/breadcrumbs-box-->
+
+
+
+
+				<div class="contacts-box" itemscope="" itemtype="https://schema.org/LocalBusiness">
+					<meta itemprop="url" content="https://talos-case.ru/">
+					<meta itemprop="logo" content="https://talos-case.ru/local/templates/talos/img/main/logo.svg">
+					<meta itemprop="name" content="Талос кейс">
+					<div class="info-inner-wrap">
+						<div class="title-box">
+							<h1 class="h1-title">Контакты</h1>
+						</div>
+						<div class="items-wrap">
+							<div class="item-wrap wrap01">
+								<div class="item-tile-cnt">
+									<div class="tile-title">Юридическое лицо</div>
+									<div class="tile-value" itemprop="legalName">ООО “Талос кейс” </div>
+								</div>
+							</div>
+							<div class="item-wrap wrap02">
+								<div class="item-tile-cnt">
+									<div class="tile-title">ИНН</div>
+									<div class="tile-value" itemprop="taxID">9722072307</div>
+								</div>
+							</div>
+							<div class="item-wrap wrap01">
+								<div class="item-tile-cnt">
+									<div class="tile-title">Телефон</div>
+									<div class="tile-value">
+										<a href="tel:84950858566" class="link-phone link-main" itemprop="telephone">+7 495
+											085-85-66</a>
+										<a href="https://wa.me/+79688930344 " target="_blank" class="btn-action-ico button-soc"> <img src="images/soc-wa.svg" alt=""> </a>
+										<a href="tg://resolve?domain=taloscase" target="_blank" class="btn-action-ico button-soc"> <img src="images/soc-tg.svg" alt=""> </a>
+									</div>
+								</div>
+							</div>
+							<div class="item-wrap wrap02">
+								<div class="item-tile-cnt">
+									<div class="tile-title">E-mail</div>
+									<div class="tile-value"><a href="mailto:sales@talos-case.ru" itemprop="email">sales@talos-case.ru</a></div>
+								</div>
+							</div>
+							<!-- <div class="item-wrap wrap03">
+					<div class="item-tile-cnt tile-main">
+						<div class="tile-title">Юридическое лицо</div>
+						<div class="tile-values">
+							<div class="tile-value">ООО “Талос кейс” </div>
+							<div class="tile-value">ИНН 7777777777 </div>
+						</div>
+					</div>
+				</div> -->
+							<div class="item-wrap wrap04">
+								<div class="item-tile-cnt">
+									<div class="tile-title">Адрес</div>
+									<div class="tile-value" itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress">
+										<span itemprop="postalCode">127490</span>, <span itemprop="addressLocality">Москва</span>, <br>
+										<span itemprop="streetAddress">Юрловский проезд, 2с1</span> <br>
+										<meta itemprop="addressCountry" content="RU">
+									</div>
+								</div>
+							</div>
+							<div class="item-wrap wrap05">
+								<div class="item-tile-cnt">
+									<div class="tile-title">Режим работы</div>
+									<div class="tile-value"><time itemprop="openingHours" datetime="Mo-Fr 09:00-18:00">Понедельник-пятница <br>с 9:00 до 18:00</time>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="info-wrap">
+							<p>
+								У вас есть вопросы или предложение? <br>
+								Напишите нам и мы свяжемся с вами в�ближайшее время.
+							</p>
+							<a href="" class="btn button-border js-scroll-up js-popup-open" data-popup="popup-order">Написать нам</a>
+						</div>
+					</div>
+					<div class="map-inner-wrap">
+						<div class="elm-photo photo-cover">
+							<img src="images/Map.jpg" alt="Схема проезда: Москва, Юрловский проезд, 2с1">
+						</div>
+
+
+						<a href="https://yandex.ru/maps/213/moscow/house/yurlovskiy_proyezd_2s1/Z04YcAVpQUwAQFtvfXR3dXhmYQ==/?ll=37.629897%2C55.864455&utm_source=share&z=17.12" class="btn button-border" target="_blank">
+							Открыть в <img src="images/yd.svg" alt="">
+						</a>
+					</div>
+					<div class="actual-address-box">
+						<h2 class="h2-title">Фактический адрес</h2>
+						<div class="actual-address-inner">
+							<div class="actual-address-info">
+								<div class="actual-address-item">
+									<div class="actual-address-title">Адрес</div>
+									<div class="actual-address-value">127576, Москва, Юрловский проезд, 2с1</div>
+								</div>
+								<div class="actual-address-item">
+									<div class="actual-address-title">Координаты</div>
+									<div class="actual-address-value">55.864085, 37.629975</div>
+								</div>
+							</div>
+							<div class="actual-address-downloads">
+								<div class="actual-address-title">Схема проезда</div>
+								<a href="/images/Map.jpg" class="actual-address-file" download="">
+									<span class="file-download-ico"><img src="images/Download.png" alt=""></span>
+									<span class="file-title">Скачать схему проезда</span>
+									<span class="file-size">2,5 Мб</span>
+									<span class="file-type"><img src="images/ico-pdf.png" alt="PDF"></span>
+								</a>
+								<a href="/images/Map.jpg" class="actual-address-file" download="">
+									<span class="file-download-ico"><img src="images/Download.png" alt=""></span>
+									<span class="file-title">Скачать схему проезда</span>
+									<span class="file-size">2,5 Мб</span>
+									<span class="file-type"><img src="images/ico-doc.png" alt="DOC"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+			</div>
+
+
+			<!-- footer -->
+			<footer class="footer ">
+				<div class="inner-wrap">
+					<a href="" class="btn btn-action-ico ico-arrow-up" id="up" aria-label="Наверх"></a>
+					<div class="info-wrap">
+						©�2026 ООО «ТАЛОС КЕЙС» / Все права защищены </div>
+					<div class="info-wrap"><a href="/privacy/">Политика конфиденциальности</a></div>
+				</div>
+			</footer>
+			<!-- /footer -->
+
+			<style>
+				.catalog-search-box .tabs-box li {
+					padding: 0;
+				}
+
+				.catalog-search-box .tabs-box .btn-tab {
+					padding: 0px !important;
+					white-space: normal;
+				}
+
+				.catalog-search-box .tabs-box .btn-tab .button-title {
+					height: 60px !important;
+					line-height: 18px;
+					text-align: center;
+					font-size: 12px
+				}
+
+				.catalog-search-box .button-title.mobile {
+					display: none
+				}
+
+				@media (max-width: 767px) {
+
+					.catalog-search-box .button-title {
+						display: none !important
+					}
+
+					.catalog-search-box .button-title.mobile {
+						display: block !important
+					}
+
+					.catalog-search-box .tabs-box .menu {
+						margin: 0 12px
+					}
+
+					.catalog-search-box .tabs-box .btn-tab .button-title {
+						height: 20px !important;
+						text-align: left;
+						margin: 10px 0
+					}
+				}
+			</style>
+
+			<div class="popup-outer-box popup-top" id="popup-catalog-search">
+				<div class="popup-box">
+					<a href="" class="btn-action-ico ico-close js-popup-close" aria-label="Закрыть окно"></a>
+					<div class="popup-content-wrap">
+						<!--catalog-search-box-->
+						<div class="catalog-search-box">
+							<div class="info-inner-wrap">
+								<div class="tabs-box js-tabs-nav">
+									<ul class="menu">
+										<li><a href="" class="btn-tab active" data-tab="popup-tab01">
+												<span class="button-title">Защитные <br>кейсы</span>
+												<span class="button-title mobile">Защитные кейсы</span></a></li>
+										<li><a href="" class="btn-tab" data-tab="popup-tab04">
+												<span class="button-title">Транспортиро-<br>вочные кофры</span>
+												<span class="button-title mobile">Транспортировочные кофры</span></a></li>
+										<li><a href="" class="btn-tab" data-tab="popup-tab02">
+												<span class="button-title">Ударопрочные <br>контейнеры</span>
+												<span class="button-title mobile">Ударопрочные контейнеры</span></a></li>
+										<li><a href="" class="btn-tab" data-tab="popup-tab03">
+												<span class="button-title">Рэковые <br>кейсы (U)</span>
+												<span class="button-title mobile">Рэковые кейсы (U)</span></a></li>
+									</ul>
+
+
+								</div>
+								<div class="form-inner-wrap js-tab-block" data-tab="popup-tab01">
+									<div class="form-title-wrap">
+										<div class="frm-title">Подбор кейсов по внутренним размерам, мм</div>
+									</div>
+									<form action="/local/ajax/searchBySize.php" method="get">
+										<div class="frm-row">
+											<div class="frm-field">
+												<div class="frm-field-inputs">
+													<input type="hidden" name="url" value="/catalog/zashchitnye-germetichnye-kejsy/filter">
+													<div class="field-input">
+														<input type="text" class="form-input" placeholder="Длина" name="size1">
+													</div>
+													<div class="field-input">
+														<input type="text" class="form-input" placeholder="Ширина" name="size2">
+													</div>
+													<div class="field-input">
+														<input type="text" class="form-input" placeholder="Высота" name="size3">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="frm-row-submit">
+											<div class="frm-field">
+												<button type="submit" class="btn button-border">Подобрать</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="form-inner-wrap js-tab-block" data-tab="popup-tab04">
+									<div class="form-title-wrap">
+										<div class="frm-title">Подбор кофра по внутренним размерам, мм</div>
+									</div>
+									<form action="/local/ajax/searchBySize.php" method="get">
+										<div class="frm-row">
+											<div class="frm-field">
+												<div class="frm-field-inputs">
+													<input type="hidden" name="url" value="/catalog/transportirovochnye-kofry/filter">
+													<div class="field-input">
+														<input type="text" class="form-input" placeholder="Длина" name="size1">
+													</div>
+													<div class="field-input">
+														<input type="text" class="form-input" placeholder="Ширина" name="size2">
+													</div>
+													<div class="field-input">
+														<input type="text" class="form-input" placeholder="Высота" name="size3">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="frm-row-submit">
+											<div class="frm-field">
+												<button type="submit" class="btn button-border">Подобрать</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="form-inner-wrap js-tab-block" data-tab="popup-tab02">
+									<div class="form-title-wrap">
+										<div class="frm-title">Подбор кейсов по внутренним размерам, мм</div>
+									</div>
+									<form action="/local/ajax/searchBySize.php" method="get">
+										<div class="frm-row">
+											<div class="frm-field">
+												<div class="frm-field-inputs">
+													<input type="hidden" name="url" value="/catalog/udaroprochnye-kontejnery/filter">
+													<div class="field-input">
+														<input type="text" class="form-input" placeholder="Длина" name="size1">
+													</div>
+													<div class="field-input">
+														<input type="text" class="form-input" placeholder="Ширина" name="size2">
+													</div>
+													<div class="field-input">
+														<input type="text" class="form-input" placeholder="Высота" name="size3">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="frm-row-submit">
+											<div class="frm-field">
+												<button type="submit" class="btn button-border">Подобрать</button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="form-inner-wrap js-tab-block" data-tab="popup-tab03">
+									<div class="form-title-wrap">
+										<div class="frm-title">Подбор рэкового кейса-контейнера по�высоте�(U)</div>
+									</div>
+
+									<div class="frm-row">
+										<div class="frm-field">
+											<select class="form-input" id="choseRackHeight" required="">
+												<option selected="" disabled="" hidden="">Выбрать</option><!--placeholder-->
+												<option value="11u">11U</option>
+												<option value="12u">12U</option>
+												<option value="14u">14U</option>
+												<option value="16u">16U</option>
+												<option value="2u">2U</option>
+												<option value="3u">3U</option>
+												<option value="4u">4U</option>
+												<option value="5u">5U</option>
+												<option value="6u">6U</option>
+												<option value="7u">7U</option>
+												<option value="8u">8U</option>
+												<option value="9u">9U</option>
+											</select>
+										</div>
+									</div>
+									<div class="frm-row-submit">
+										<div class="frm-field">
+											<button type="submit" class="btn button-border" id="podobrat">Подобрать</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="photo-inner-wrap">
+								<picture class="elm-photo js-tab-block" data-tab="popup-tab01">
+									<source srcset="images/cat-search01.svg" media="(min-width: 1024px)">
+									<source srcset="images/cat-search01-m.svg" media="">
+									<img src="images/cat-search01-m.svg" alt="">
+								</picture>
+								<picture class="elm-photo js-tab-block" data-tab="popup-tab02">
+									<source srcset="images/cat-search02.svg" media="(min-width: 1024px)">
+									<source srcset="images/cat-search02-m.svg" media="">
+									<img src="images/cat-search02-m.svg" alt="">
+								</picture>
+								<picture class="elm-photo js-tab-block" data-tab="popup-tab03">
+									<source srcset="images/cat-search03.svg" media="(min-width: 1024px)">
+									<source srcset="images/cat-search03-m.svg" media="">
+									<img src="images/cat-search03-m.svg" alt="">
+								</picture>
+								<picture class="elm-photo js-tab-block" data-tab="popup-tab04">
+									<source srcset="images/cat-search04.svg" media="(min-width: 1024px)">
+									<source srcset="images/cat-search04-m.svg" media="">
+									<img src="images/cat-search04-m.svg" alt="">
+								</picture>
+							</div>
+						</div>
+						<!--/catalog-search-box-->
+					</div>
+				</div>
+			</div><!--/popup-outer-box-->
+
+			<div class="popup-outer-box popup-top popup-order-succefull" id="popup-order-succefull">
+				<div class="popup-box">
+					<a href="" class="btn-action-ico ico-close js-popup-close" aria-label="Закрыть окно"></a>
+					<div class="popup-content-wrap">
+						<div class="succefull-box">
+							<div class="h2-title"><span>Спасибо,</span> ваша заявка отправлена</div>
+							<p>Мы свяжемся с вами в ближайшее время.</p>
+						</div>
+					</div>
+				</div>
+			</div><!--/popup-outer-box-->
+
+			<div class="popup-outer-box popup-top popup-order-succefull" id="popup-order-error">
+				<div class="popup-box">
+					<a href="" class="btn-action-ico ico-close js-popup-close" aria-label="Закрыть окно"></a>
+					<div class="popup-content-wrap">
+						<div class="succefull-box">
+							<div class="h2-title"><span>Ошибка!</span></div>
+							<p>Произошла ошибка сохранения заказа, попробуйте снова или свяжитесь с нами по доступным <a href="/contacts/">контактам</a></p>
+						</div>
+					</div>
+				</div>
+			</div><!--/popup-outer-box-->
+
+			<div class="popup-outer-box popup-top popup-order" id="popup-order">
+				<div class="popup-box">
+					<a href="" class="btn-action-ico ico-close js-popup-close" aria-label="Закрыть окно"></a>
+					<div class="popup-content-wrap">
+						<!--main-form-box-->
+						<div class="main-form-box cnt-section">
+							<div class="inner-wrap">
+								<div class="form-title-wrap">
+									<h2 class="h2-title">Оставить заявку</h2>
+								</div>
+
+
+								<form action="/local/ajax/feedback.php" class="form-inner-wrap" id="order_form" method="post" enctype="multipart/form-data">
+									<input type="hidden" name="section" value="17">
+									<input type="hidden" name="email_template" value="FEEDBACK_ORDER">
+									<div class="frm-row">
+										<div class="frm-field field-half">
+											<input type="text" class="form-input" placeholder="Имя*" name="fio" value="" required="">
+										</div>
+										<div class="frm-field field-half">
+											<input type="text" class="form-input" placeholder="Компания" name="company">
+										</div>
+									</div>
+									<div class="frm-row">
+										<div class="frm-field field-half">
+											<input type="email" class="form-input" placeholder="E-mail*" name="email" value="" required="">
+										</div>
+										<div class="frm-field field-half">
+											<input type="text" class="form-input" placeholder="Должность" name="dolzhn">
+										</div>
+									</div>
+									<div class="frm-row">
+										<div class="frm-field field-half">
+											<input type="tel" class="form-input" placeholder="Номер телефона*" name="phone" value="" required="">
+										</div>
+										<div class="frm-field field-half">
+											<div class="frm-field-file js-field-file">
+												<input type="file" class="js-field-input" name="file" id="file" aria-label="Прикрепить файл">
+												<button type="button" class="form-input js-file-button" data-title="Прикрепить файл" aria-controls="file">
+													<span class="button-title">Прикрепить файл</span>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="frm-row">
+										<div class="frm-field">
+											<textarea class="form-input" placeholder="Ваше сообщение" name="mess"></textarea>
+										</div>
+									</div>
+
+									<div class="frm-row-submit">
+										<div class="frm-field field-button">
+											<button type="submit" class="btn">Отправить</button>
+										</div>
+										<div class="smart-captcha" data-sitekey="ysc1_ZfeetyTvci6dLedwHI9PEoXU93DB5OFUhfF3hp6G6ee00793" style="height: 100px"></div>
+										<div class="frm-field field-info">Нажимая на кнопку «Отправить», вы даете согласие
+											на обработку своих <a href="/privacy/">персональных данных</a></div>
+									</div>
+
+								</form>
+							</div>
+						</div><!--/main-form-box-->
+					</div>
+				</div>
+			</div><!--/popup-outer-box-->
+
+		</div>
+		<!-- /wrap -->
+
+
+
+
+		<script>
+			(function(w, d) {
+				var loaded = false;
+				var captchaLoaded = false;
+				var events = ['pointerdown', 'keydown', 'touchstart'];
+
+				function addScript(src, onload) {
+					if (d.querySelector('script[src="' + src + '"]')) {
+						return;
+					}
+					var script = d.createElement('script');
+					script.async = true;
+					script.src = src;
+					if (onload) {
+						script.onload = onload;
+					}
+					(d.head || d.documentElement).appendChild(script);
+				}
+
+				function loadMetrika() {
+					w.ym = w.ym || function() {
+						(w.ym.a = w.ym.a || []).push(arguments);
+					};
+					w.ym.l = 1 * new Date();
+					addScript('https://mc.yandex.ru/metrika/tag.js');
+					w.ym(96722873, 'init', {
+						clickmap: true,
+						trackLinks: true,
+						accurateTrackBounce: true,
+						webvisor: true
+					});
+				}
+
+				function loadGtm() {
+					w.dataLayer = w.dataLayer || [];
+					w.dataLayer.push({
+						'gtm.start': new Date().getTime(),
+						event: 'gtm.js'
+					});
+					addScript('https://www.googletagmanager.com/gtm.js?id=GTM-PFFL3KR7');
+				}
+
+				function loadCalltouch() {
+					var counterId = '22reslo6';
+					w.CalltouchDataObject = 'ct';
+					w.ct = w.ct || function() {
+						(w.ct.callbacks = w.ct.callbacks || []).push(arguments);
+					};
+					w.ct.loaded = false;
+					w.ct.counters = [counterId];
+					addScript('https://mod.calltouch.ru/' + (Array.prototype.find ? 'init-min.js' : 'init.js') + '?id=' + counterId);
+				}
+
+				function loadCaptcha() {
+					if (captchaLoaded) {
+						return;
+					}
+					if (!d.querySelector('.smart-captcha')) {
+						return;
+					}
+					captchaLoaded = true;
+					addScript('https://smartcaptcha.cloud.yandex.ru/captcha.js');
+				}
+				w.talosLoadCaptcha = loadCaptcha;
+
+				function loadThirdParty() {
+					if (loaded) {
+						return;
+					}
+					loaded = true;
+					events.forEach(function(eventName) {
+						w.removeEventListener(eventName, loadThirdParty, {
+							passive: true
+						});
+					});
+					loadMetrika();
+					loadGtm();
+					loadCalltouch();
+				}
+
+				function scheduleThirdParty() {
+					events.forEach(function(eventName) {
+						w.addEventListener(eventName, loadThirdParty, {
+							once: true,
+							passive: true
+						});
+					});
+					d.addEventListener('click', function(event) {
+						var target = event.target;
+						if (!target.closest) {
+							return;
+						}
+						if (target.closest('[data-popup="popup-order"], #popup-order')) {
+							loadCaptcha();
+						}
+					}, {
+						passive: true
+					});
+					d.addEventListener('focusin', function(event) {
+						var target = event.target;
+						if (!target.closest) {
+							return;
+						}
+						var form = target.closest('form');
+						if (target.closest('.smart-captcha') || (form && form.querySelector('.smart-captcha'))) {
+							loadCaptcha();
+						}
+					}, {
+						passive: true
+					});
+					d.addEventListener('submit', function(event) {
+						var target = event.target;
+						if (target && target.matches && target.matches('#order_form')) {
+							loadCaptcha();
+						}
+					}, true);
+				}
+
+				if (d.readyState === 'complete') {
+					scheduleThirdParty();
+				} else {
+					w.addEventListener('load', scheduleThirdParty, {
+						once: true
+					});
+				}
+			})(window, document);
+		</script>
+		<script>
+			if (!window.BX) window.BX = {};
+			if (!window.BX.message) window.BX.message = function(mess) {
+				if (typeof mess === 'object') {
+					for (let i in mess) {
+						BX.message[i] = mess[i];
+					}
+					return true;
+				}
+			};
+		</script>
+		<script>
+			(window.BX || top.BX).message({
+				"JS_CORE_LOADING": "Загрузка...",
+				"JS_CORE_NO_DATA": "- Нет данных -",
+				"JS_CORE_WINDOW_CLOSE": "Закрыть",
+				"JS_CORE_WINDOW_EXPAND": "Развернуть",
+				"JS_CORE_WINDOW_NARROW": "Свернуть в окно",
+				"JS_CORE_WINDOW_SAVE": "Сохранить",
+				"JS_CORE_WINDOW_CANCEL": "Отменить",
+				"JS_CORE_WINDOW_CONTINUE": "Продолжить",
+				"JS_CORE_H": "ч",
+				"JS_CORE_M": "м",
+				"JS_CORE_S": "с",
+				"JSADM_AI_HIDE_EXTRA": "Скрыть лишние",
+				"JSADM_AI_ALL_NOTIF": "Показать все",
+				"JSADM_AUTH_REQ": "Требуется авторизация!",
+				"JS_CORE_WINDOW_AUTH": "Войти",
+				"JS_CORE_IMAGE_FULL": "Полный размер"
+			});
+		</script>
+		<script src="js/core.min.js"></script>
+		<script>
+			BX.Runtime.registerExtension({
+				"name": "main.core",
+				"namespace": "BX",
+				"loaded": true
+			});
+		</script>
+		<script>
+			BX.setJSList(["\/bitrix\/js\/main\/core\/core_ajax.js", "\/bitrix\/js\/main\/core\/core_promise.js", "\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js", "\/bitrix\/js\/main\/loadext\/loadext.js", "\/bitrix\/js\/main\/loadext\/extension.js", "\/bitrix\/js\/main\/polyfill\/promise\/js\/promise.js", "\/bitrix\/js\/main\/polyfill\/find\/js\/find.js", "\/bitrix\/js\/main\/polyfill\/includes\/js\/includes.js", "\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js", "\/bitrix\/js\/ui\/polyfill\/closest\/js\/closest.js", "\/bitrix\/js\/main\/polyfill\/fill\/main.polyfill.fill.js", "\/bitrix\/js\/main\/polyfill\/find\/js\/find.js", "\/bitrix\/js\/main\/polyfill\/matches\/js\/matches.js", "\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js", "\/bitrix\/js\/main\/core\/core.js", "\/bitrix\/js\/main\/polyfill\/intersectionobserver\/js\/intersectionobserver.js", "\/bitrix\/js\/main\/lazyload\/dist\/lazyload.bundle.js", "\/bitrix\/js\/main\/polyfill\/core\/dist\/polyfill.bundle.js", "\/bitrix\/js\/main\/parambag\/dist\/parambag.bundle.js"]);
+		</script>
+		<script>
+			BX.Runtime.registerExtension({
+				"name": "ui.dexie",
+				"namespace": "BX.DexieExport",
+				"loaded": true
+			});
+		</script>
+		<script>
+			BX.Runtime.registerExtension({
+				"name": "fc",
+				"namespace": "window",
+				"loaded": true
+			});
+		</script>
+		<script>
+			BX.Runtime.registerExtension({
+				"name": "pull.protobuf",
+				"namespace": "BX",
+				"loaded": true
+			});
+		</script>
+		<script>
+			BX.Runtime.registerExtension({
+				"name": "rest.client",
+				"namespace": "window",
+				"loaded": true
+			});
+		</script>
+		<script>
+			(window.BX || top.BX).message({
+				"pull_server_enabled": "Y",
+				"pull_config_timestamp": 1738231248,
+				"shared_worker_allowed": "Y",
+				"pull_guest_mode": "N",
+				"pull_guest_user_id": 0,
+				"pull_worker_mtime": 1781178803
+			});
+			(window.BX || top.BX).message({
+				"PULL_OLD_REVISION": "Для продолжения корректной работы с сайтом необходимо перезагрузить страницу."
+			});
+		</script>
+		<script>
+			BX.Runtime.registerExtension({
+				"name": "pull.client",
+				"namespace": "BX",
+				"loaded": true
+			});
+		</script>
+		<script>
+			BX.Runtime.registerExtension({
+				"name": "pull",
+				"namespace": "window",
+				"loaded": true
+			});
+		</script>
+		<script>
+			(window.BX || top.BX).message({
+				"LANGUAGE_ID": "ru",
+				"FORMAT_DATE": "DD.MM.YYYY",
+				"FORMAT_DATETIME": "DD.MM.YYYY HH:MI:SS",
+				"COOKIE_PREFIX": "BITRIX_SM",
+				"SERVER_TZ_OFFSET": "10800",
+				"UTF_MODE": "Y",
+				"SITE_ID": "s1",
+				"SITE_DIR": "\/"
+			});
+		</script>
+		<script src="js/dexie.bundle.min.js"></script>
+		<script src="js/core_frame_cache.min.js"></script>
+		<script src="js/protobuf.js"></script>
+		<script src="js/model.min.js"></script>
+		<script src="js/rest.client.min.js"></script>
+		<script src="js/pull.client.min.js"></script>
+		<script>
+			BX.setJSList(["\/local\/templates\/talos\/js\/jquery.min.js", "\/local\/templates\/talos\/js\/jquery-ui.min.js", "\/local\/templates\/talos\/js\/jquery.ui.touch-punch.min.js", "\/local\/templates\/talos\/js\/slick.min.js", "\/local\/templates\/talos\/js\/sharer.min.js", "\/local\/templates\/talos\/js\/scripts.js", "\/local\/templates\/talos\/js\/jquery.maskedinput.js", "\/bitrix\/components\/bitrix\/search.title\/script.js"]);
+		</script>
+		<script>
+			BX.setCSSList(["\/local\/templates\/talos\/components\/bitrix\/search.title\/talos\/style.css", "\/local\/templates\/talos\/template_styles.css"]);
+		</script>
+		<script>
+			(function() {
+				"use strict";
+
+				var counter = function() {
+					var cookie = (function(name) {
+						var parts = ("; " + document.cookie).split("; " + name + "=");
+						if (parts.length == 2) {
+							try {
+								return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));
+							} catch (e) {}
+						}
+					})("BITRIX_CONVERSION_CONTEXT_s1");
+
+					if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+						return;
+
+					var request = new XMLHttpRequest();
+					request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+					request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+					request.send(
+						"SITE_ID=" + encodeURIComponent("s1") +
+						"&sessid=" + encodeURIComponent(BX.bitrix_sessid()) +
+						"&HTTP_REFERER=" + encodeURIComponent(document.referrer)
+					);
+				};
+
+				if (window.frameRequestStart === true)
+					BX.addCustomEvent("onFrameDataReceived", counter);
+				else
+					BX.ready(counter);
+			})();
+		</script>
+		<script src="js/template_ef2c4b97fc3c1066be0cc11430997b05_v1.js"></script>
+
+
+		<script>
+			BX.ready(function() {
+				new JCTitleSearch({
+					'AJAX_PAGE': '/contacts/',
+					'CONTAINER_ID': 'title-search',
+					'INPUT_ID': 'title-search-input',
+					'MIN_QUERY_LEN': 2
+				});
+			});
+		</script>
+
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				const textElements = document.querySelectorAll('.de_txt');
+
+				textElements.forEach(function(text) {
+					const btn = text.nextElementSibling;
+
+					btn.addEventListener('click', function() {
+						text.classList.toggle('expanded');
+						if (text.classList.contains('expanded')) {
+							btn.textContent = 'Скрыть';
+						} else {
+							btn.textContent = 'Читать все';
+						}
+					});
+				});
+			});
+		</script>
+		<script>
+			$(document).ready(function() {
+
+				$('body').on('click', '.js-scroll-up', function(e) {
+					$('html,body').animate({
+						scrollTop: 0
+					}, 100);
+				})
+
+				$('#podobrat').on('click', function() {
+					window.location.href = "/catalog/rekovye-keysy/filter/rek_size2-is-" + $("#choseRackHeight option:selected").val() + "/apply/";
+				})
+
+				$(document).on('click', '.load_more', function() {
+
+					var targetContainer = $('.catalog_section'), //  Контейнер, в котором хранятся элементы
+						url = $('.load_more').attr('data-url'); //  URL, из которого будем брать элементы
+
+					if (url !== undefined) {
+						$.ajax({
+							type: 'GET',
+							url: url,
+							dataType: 'html',
+							success: function(data) {
+
+								//  Удаляем старую навигацию
+								$('.load_more').remove();
+
+								var elements = $(data).find('.item-wrap'), //  Ищем элементы
+									pagination = $(data).find('.load_more'); //  Ищем навигацию
+
+								targetContainer.append(elements); //  Добавляем посты в конец контейнера
+								targetContainer.append(pagination); //  добавляем навигацию следом
+
+								$('.item-tile-catalog .tile-slider:not(.slick-slider)').slick({
+									dots: true,
+									slidesToShow: 1,
+									variableWidth: false,
+									infinite: true,
+									adaptiveHeight: false,
+									rows: 1,
+									swipeToSlide: true,
+									autoplay: false,
+									autoplaySpeed: 5000,
+									prevArrow: false,
+									nextArrow: false,
+								});
+							}
+						})
+					}
+
+				});
+
+			});
+
+			$(document).on('bxmaker.ajaxpagenav.successResponse', function(e, data) {
+				//console.log(data.showmore);			
+				$('.item-tile-catalog .tile-slider:not(.slick-slider)').slick({
+					dots: true,
+					slidesToShow: 1,
+					variableWidth: false,
+					infinite: true,
+					adaptiveHeight: false,
+					rows: 1,
+					swipeToSlide: true,
+					autoplay: false,
+					autoplaySpeed: 5000,
+					prevArrow: false,
+					nextArrow: false,
+				});
+
+				$('.plus').on('click', function(e) {
+					var val = $(this).parent().find('.count').val() * 1 + 1;
+					$(this).parent().find('.count').val(val);
+					return false;
+				});
+				$('.minus').on('click', function(e) {
+					var val = $(this).parent().find('.count').val() * 1 - 1;
+					if (val < 0) val = 1;
+					$(this).parent().find('.count').val(val);
+					return false;
+				});
+
+				$('.add2Cart').on('click', function(e) {
+
+					if (!$(this).hasClass('active')) {
+						e.preventDefault();
+					}
+
+					var prod_id = $(this).attr('data-id');
+					var countInCart = $('.total-value span').html() * 1;
+
+					var count = $(this).parent().parent().find('.count').val();
+
+					$(this).addClass('active');
+					$(this).find('.button-title').html("В корзине");
+					var incart = $('.incart').attr('data-count') * 1 + 1;
+					$('.btn-header-mobile.incart').attr('data-count', incart);
+
+					$.ajax({
+						url: '/local/ajax/basketHandler.php',
+						data: {
+							'action': 'add2Cart',
+							'id': prod_id,
+							'count': count
+						},
+						method: "POST",
+						dataType: "json",
+						beforeSend: function(data) {},
+						success: function(answer) {
+							//$('.answer').html('answer.result.message);
+						},
+						error: function(error) {
+							//$('.answer').html('Ошибка, попробуйте еще раз');
+						}
+					});
+
+				});
+
+			});
+
+			$(window).on('load', function() {
+				$("[name='phone']").mask("+7 (999) 999-99-99");
+
+				$('.changeQuant').on('change', function(e) {
+					alert($(this).val());
+				})
+
+
+				$('.changeColor').on('change', function(e) {
+					var optionSelected = $("option:selected", this);
+					var valueSelected = this.value;
+					var prodID = $(this).attr('data-prodid');
+
+					$.ajax({
+						url: '/local/ajax/basketHandler.php',
+						data: {
+							'action': 'changeColor',
+							'nameColor': valueSelected,
+							'prod_id': prodID
+						},
+						method: "POST",
+						dataType: "json",
+						beforeSend: function(data) {},
+						success: function(answer) {
+							console.log(answer);
+							//$('.answer').html('answer.result.message);
+						},
+						error: function(error) {
+							//$('.answer').html('Ошибка, попробуйте еще раз');
+						}
+					});
+				})
+
+
+				$('.plus').on('click', function(e) {
+					var val = $(this).parent().find('.count').val() * 1 + 1;
+					$(this).parent().find('.count').val(val);
+					return false;
+				});
+				$('.minus').on('click', function(e) {
+					var val = $(this).parent().find('.count').val() * 1 - 1;
+					if (val < 0) val = 1;
+					$(this).parent().find('.count').val(val);
+					return false;
+				});
+
+				$('.ico-add').on('click', function(e) {
+					$('.order-outer-wrap').toggleClass('section-ext-show');
+					var sect_id = $(this).attr('data-sectID');
+					var prod_id = $(this).attr('data-prodID');
+
+					$.ajax({
+						url: '/local/ajax/getProdAccessor.php',
+						data: {
+							'section': sect_id,
+							'product': prod_id
+						},
+						method: "POST",
+						dataType: "html",
+						beforeSend: function(data) {},
+						success: function(data) {
+							$('#accessList').html(data);
+						},
+						error: function(error) {
+							//$('.answer').html('Ошибка, попробуйте еще раз');
+						}
+					});
+
+					return false;
+				})
+
+
+				$('.addAccessor').on('click', function(e) {
+					e.preventDefault();
+					var addName = $(this).attr('data-name');
+					var prodID = $(this).attr('data-prodid');
+
+					if ($(this).hasClass('active')) { // Удаляем из заказа
+						var action = 'addAccess';
+
+					} else { // Добавляем в заказ
+						var action = 'deleteAccess';
+					}
+
+					$.ajax({
+						url: '/local/ajax/basketHandler.php',
+						data: {
+							'action': action,
+							'name': addName,
+							'prod_id': prodID
+						},
+						method: "POST",
+						dataType: "json",
+						beforeSend: function(data) {},
+						success: function(answer) {
+							console.log(answer);
+							//$('.answer').html('answer.result.message);
+						},
+						error: function(error) {
+							//$('.answer').html('Ошибка, попробуйте еще раз');
+						}
+					});
+				});
+
+				$('.add2Cart').on('click', function(e) {
+
+					if (!$(this).hasClass('active')) {
+						e.preventDefault();
+					}
+
+					var prod_id = $(this).attr('data-id');
+					var countInCart = $('.total-value span').html() * 1;
+
+					var count = $(this).parent().parent().find('.count').val();
+
+					$(this).addClass('active');
+					$(this).find('.button-title').html("В корзине");
+					var incart = $('.incart').attr('data-count') * 1 + 1;
+					$('.btn-header-mobile.incart').attr('data-count', incart);
+
+					$.ajax({
+						url: '/local/ajax/basketHandler.php',
+						data: {
+							'action': 'add2Cart',
+							'id': prod_id,
+							'count': count
+						},
+						method: "POST",
+						dataType: "json",
+						beforeSend: function(data) {},
+						success: function(answer) {
+							$('.mobile-panel-box').addClass('cart-active');
+							$('.wrap-cart').addClass('active');
+							//$('.answer').html('answer.result.message);
+						},
+						error: function(error) {
+							//$('.answer').html('Ошибка, попробуйте еще раз');
+						}
+					});
+
+				});
+
+				$('.delFromCart').on('click', function(e) {
+					e.preventDefault();
+					var prod_id = $(this).attr('data-id');
+					var prod_quant_incart = $(this).attr('data-quant');
+					var countInCart = $('.total-value span').html() * 1;
+					//countInCart--;
+					$('.total-value span').html(countInCart - prod_quant_incart);
+
+					$(this).parent().parent().hide();
+
+					$.ajax({
+						url: '/local/ajax/basketHandler.php',
+						data: {
+							'action': 'delete',
+							'id': prod_id
+						},
+						method: "POST",
+						dataType: "json",
+						beforeSend: function(data) {},
+						success: function(answer) {
+							//$('.answer').html('answer.result.message);
+							console.log(countInCart);
+							if (countInCart == prod_quant_incart) {
+								window.location.href = "/catalog/";
+							}
+
+						},
+						error: function(error) {
+							//$('.answer').html('Ошибка, попробуйте еще раз');
+						}
+					});
+
+				});
+
+				$('.frm-field-counter .btn').on('click', function(e) {
+					e.preventDefault();
+					var action = $(this).attr('data-type');
+					var itog = $('.total-value span').html() * 1;
+					var id = $(this).parent().attr('data-id');
+					//				console.log(id);
+					if (action == 'plus') {
+						$('.total-value span').html(itog + 1);
+					} else {
+						$('.total-value span').html(itog - 1);
+					}
+
+					$.ajax({
+						url: '/local/ajax/basketHandler.php',
+						data: {
+							'action': 'changeQuantity',
+							'cart_id': id,
+							'plus_minus': action
+						},
+						method: "POST",
+						dataType: "json",
+						beforeSend: function(data) {},
+						success: function(answer) {
+							//$('.answer').html('answer.result.message);
+						},
+						error: function(error) {
+							//$('.answer').html('Ошибка, попробуйте еще раз');
+						}
+					});
+
+					//$(this).prev('input').val();
+					//alert($(this).parent().find('input').val());
+					//alert($(this).attr('data-type'));	
+				})
+
+				//form submit message
+				$('#feedback_form').on('submit', function(e) {
+
+					e.preventDefault();
+					var m_method = $(this).attr('method');
+					var m_action = $(this).attr('action');
+					var m_data = $(this).serialize();
+
+					// Для отправки файлов
+					formdata = new FormData($('#feedback_form')[0]);
+					formdata.append('file', $('#file')[0].files[0]);
+
+					$.ajax({
+						type: m_method,
+						url: m_action,
+						data: formdata,
+						dataType: 'json',
+						contentType: false,
+						processData: false,
+						success: function(result) {
+							if (result.success == 1) {
+								$('#popup-order-succefull').addClass('active');
+								$('#feedback_form')[0].reset();
+							} else {
+								$("#result").html(result.error);
+							}
+						}
+					});
+
+					return false;
+				})
+
+				$('#order_form').on('submit', function(e) {
+
+					e.preventDefault();
+					var m_method = $(this).attr('method');
+					var m_action = $(this).attr('action');
+					var m_data = $(this).serialize();
+
+					// Для отправки файлов
+					formdata = new FormData($('#order_form')[0]);
+					formdata.append('file', $('#file')[0].files[0]);
+
+					$.ajax({
+						type: m_method,
+						url: m_action,
+						data: formdata,
+						dataType: 'json',
+						contentType: false,
+						processData: false,
+						success: function(result) {
+							if (result.success == 1) {
+								$('#popup-order-succefull').addClass('active');
+								$('#order_form')[0].reset();
+							} else {
+								$("#result").html(result.error);
+							}
+						}
+					});
+
+					return false;
+				})
+
+
+				//form Order
+				$('#sendOrder').on('submit', function(e) {
+
+					e.preventDefault();
+					var m_method = $(this).attr('method');
+					var m_action = $(this).attr('action');
+					var m_data = $(this).serialize();
+
+					$.ajax({
+						type: 'POST',
+						url: m_action,
+						data: m_data,
+						dataType: 'json',
+						beforeSend: function(data) {
+							$("#sendButt").hide();
+						},
+						success: function(result) {
+							//console.log(result.success);
+							if (result.success == 1) {
+								$('#popup-order-succefull').addClass('active');
+								$('.order-inner-wrap').hide();
+								$('#sendOrder')[0].reset();
+							} else {
+								$('#popup-order-error').addClass('active');
+								$("#result").html(result.success);
+							}
+						},
+						error: function() {
+							$('#popup-order-error').addClass('active');
+						},
+						complete: function() {
+							$("#sendButt").show();
+						}
+					});
+
+					return false;
+				})
+
+				$(".menu .btn-tab").click(function() {
+					if ($(this).hasClass('all')) {
+						$('.button-more').show();
+					} else {
+						$('.button-more').hide();
+					}
+
+					$('.news-box .js-tab-block.active').each(function(index) {
+						$(this).removeClass('hidd');
+					})
+					$('.news-box .js-tab-block.active').each(function(index) {
+						if (index > 2) {
+							$(this).addClass('hidd');
+						}
+					});
+
+				})
+
+				/*
+				            $('.button-more').click(function(){
+				                var count = 0;
+				                $('.news-box .js-tab-block.hidd').each(function(index){
+				                    count++;
+				                })
+				                if (count <= 3)  {
+				                    $('.button-more').hide();
+				                }				
+				                $('.news-box .js-tab-block.hidd').each(function(index){
+				                    if (index < 3) {
+				                        $(this).removeClass('hidd');						
+				                    }
+				                })				
+				                return false; 
+				            })
+				*/
+			});
+		</script>
+
+
+
+
+
+
+	</body>
+
+</html><!--55b7d9d1b65d7295c328e2a614dc181a-->
